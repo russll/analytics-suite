@@ -1,0 +1,14 @@
+# top-most EditorConfig file
+root = true
+
+[*.{js,jsx}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+[*.{html}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2

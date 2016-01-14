@@ -1,0 +1,379 @@
+.block-table
+  display flex
+  flex-flow column
+  overflow-x auto
+  @media screen and (max-width: 840px)
+    overflow visible
+    margin-top 24px
+  .block-body
+    overflow-y auto
+    display inline-block
+
+    @media screen and (max-width: 840px)
+      overflow visible
+      height auto!important
+      width auto!important
+    .block-row
+      display flex
+      min-height auto
+      @media screen and (max-width: 840px)
+        align-items  center
+        flex-flow column
+        min-height 48px
+        .block-row__column
+          display none
+        .block-row__column_mobile
+          display inline-block
+          position relative
+          .indicators
+            position absolute
+            top -4px
+            left 16px
+
+      //&:hover
+      //  background-color rgba(63,81,181,.02)
+      .block-row__column_mobile
+        display none
+        @media screen and (max-width: 840px)
+          display inline-block
+      .block-row__column,
+      .block-row__column_mobile
+        width 240px
+        min-width 240px
+        margin 8px
+        &.first
+          width 320px
+          min-width 320px
+          .table-cell__header
+            text-align left
+        .table-cell__header
+          background-color #f9f9f9;
+          height 42px
+          font-size 12px
+          text-align right
+          line-height 42px
+          //border-bottom 1px solid #e2e2e2
+          cursor pointer
+          padding-left 16px
+          padding-right 16px
+          .table-cell__pair_wide
+            display flex
+            justify-content space-between
+          .table-cell__headername
+            text-transform uppercase
+            text-overflow ellipsis
+            white-space nowrap
+            ovrflow hidden
+        .table-cell__body
+          font-size 12px
+          display flex
+          flex-flow column
+          padding-top 8px
+          @media screen and (max-width: 840px)
+            display none
+          .table-cell__item
+            margin-top 10px
+            padding-top 5px
+            padding-bottom 5px
+            border-top 1px solid rgba(150,150,150,.1)
+          .table-cell__data
+            display flex
+            flex-flow row
+            justify-content space-between
+            //min-width 240px
+            padding 0 0px
+            .title
+              opacity .6
+              padding 2px 5px
+            .value
+              opacity .8
+              padding 2px 5px
+        .details
+          margin 24px
+          text-align right
+
+        .indicators
+          display flex
+          margin-left -8px
+        .indicator
+          width 24px
+          height 24px
+          border-radius 50%
+          margin-right 8px
+          margin-top 8px
+        .indicator_mini
+          width 8px
+          height 8px
+          display inline-block
+          margin 0 8px 0 0
+
+      &.collapsed
+        min-height 48px
+        .table-cell__body
+          display none
+      .block-row__column_mobile
+        .table-cell__body
+          display flex
+
+  .block-header
+    display flex
+    height 42px
+    .block-header__item
+      border-width 0
+      text-align center
+      font-weight 400
+      font-size 12px
+      padding 0
+      width 240px
+      min-width 240px
+      margin 8px
+      &.first
+          text-align left
+          width 320px
+          min-width 320px
+
+  @media screen and (max-width: 840px)
+    .block-header
+      display none
+
+.detail-table
+  padding 16px
+  .block-row
+    flex-flow column
+    min-height 48px
+    .block-row__column
+      min-width 240px
+      margin 8px
+      .table-cell__header
+        background-color rgba(150,150,150,.1)
+        height 42px
+        font-size 12px
+        text-transform uppercase
+        text-overflow ellipsis
+        white-space nowrap
+        overflow hidden
+        line-height 42px
+        cursor pointer
+        padding-left 16px
+        padding-right 16px
+        .table-cell__pair_wide
+          display flex
+          justify-content space-between
+
+      .table-cell__body
+        font-size 12px
+        display flex
+        flex-flow column
+        padding-top 8px
+        .table-cell__item
+          margin-top 10px
+          padding-top 5px
+          padding-bottom 5px
+          border-top 1px solid rgba(150,150,150,.1)
+        .table-cell__data
+          display flex
+          flex-flow row
+          justify-content space-between
+          //min-width 240px
+          padding 0 0px
+          .title
+            opacity .6
+            padding 2px 5px
+          .value
+            opacity .8
+            padding 2px 5px
+      .details
+        margin 24px
+        text-align right
+      .indicators
+        display flex
+        margin-left -8px
+      .indicator
+        width 24px
+        height 24px
+        border-radius 50%
+        margin-right 8px
+        margin-top 8px
+      .indicator_mini
+        width 8px
+        height 8px
+        display inline-block
+        margin 0 8px 0 0
+
+.dialog-paper
+  background-color #ffffff
+  position fixed
+  display none
+  z-index 100!important
+  width 100%
+  height 100%
+  top 0
+  left 0
+  right 0
+  bottom 0
+  overflow auto!important
+  .dialog-paper_header
+    padding-left 24px
+  .dialog-paper_title
+    display inline-block
+    font-size 24px
+    line-height 64px
+    vertical-align top
+  .dialog-paper_close
+    display inline-block
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: -16px;
+.dialog-paper_visible
+  display block
+
+.paginator
+  text-align right
+  font-size 12px
+  color rgba(0,0,0,.6)
+  height 48px
+  .paginator__pages-arrow
+    opacity .6
+    position relative
+    top 8px
+  .paginator__rows-selector
+    top 16px
+    font-size 12px
+
+.visible
+  display block
+.hidden
+  display none
+
+.fixedcolumn
+  display inline-block;
+  background #fff;
+  overflow hidden;
+
+  .collapsed
+    .table-cell__body
+      display none;
+
+  .block-row__column
+    width 300px;
+    margin: 8px 16px 16px 0px;
+  .table-cell__header
+    background-color #f0f0f0
+    height 42px
+    font-size 12px
+    text-transform uppercase
+    text-overflow ellipsis
+    white-space nowrap
+    /*overflow hidden*/
+    line-height 42px
+    cursor pointer
+    padding-left 16px
+    padding-right 16px
+    .table-cell__pair_wide
+      display flex
+      justify-content space-between
+  .table-cell__body
+    font-size 12px
+    display flex
+    flex-flow column
+    padding-top 8px
+    .table-cell__item
+      margin-top 10px
+      padding-top 5px
+      padding-bottom 5px
+      border-top 1px solid rgba(150,150,150,.1)
+    .table-cell__data
+      display flex
+      flex-flow row
+      justify-content space-between
+      //min-width 240px
+      padding 0 0px
+      .title
+        opacity .6
+        padding 2px 5px
+      .value
+        opacity .8
+        padding 2px 5px
+
+  .details
+    margin 24px
+    text-align right
+.block-body.fixedFirstColumn
+  padding-left 310px
+.table_content
+  width auto
+.block-header__item:nth-child(2)
+  margin-left 300px
+.block-header__item.first
+  position: absolute;
+  background: #fff;
+  height: 33px;
+  margin-left: 0!important;
+  width: 300px!important;
+  min-width: 300px!important;
+.block-table
+  .scrolldiv
+    overflow: hidden;
+    width: 300px;
+    position: absolute;
+.search-input
+  top -19px
+.indicators
+  position absolute
+  top -16px
+  .indicator
+    display inline-block
+    width 15px
+    height 15px
+    margin 0 1px
+    position relative
+    border-radius 10px
+
+.table-cell__headername
+  text-transform uppercase
+  text-overflow ellipsis
+  white-space nowrap
+  overflow hidden
+
+@media screen and (max-width: 840px)
+  .table_content
+    width auto;
+  .block-table
+    .scrolldiv
+      display none;
+    .block-body
+      display block;
+      padding 0;
+.indi_switches
+  max-width 710px;
+  display inline-block
+  vertical-align: top;
+.indi_descr
+  text-align left
+  display inline-block
+  max-width 448px
+  font-size 13px
+  line-height 24px
+  span
+    margin-left 20px;
+
+.indicators_titile
+  padding 10px 0 10px
+
+.ind_1
+  color #FFB83D
+.ind_2
+  color #4F58DA
+.ind_3
+  color #1eb152
+.ind_4
+  color #1ebccc
+.indicators_list
+  margin 0
+i.clear
+  display block
+  clear both
+  height 0
+.filters
+  .hide
+    display none

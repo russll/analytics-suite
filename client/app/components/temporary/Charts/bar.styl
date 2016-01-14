@@ -1,0 +1,45 @@
+.BarChart .bar.positive
+  fill: steelblue;
+
+.BarChart .bar.positive:hover
+  fill:#4E9DDE;
+
+.BarChart .bar.negative
+  fill: darkred;
+
+.BarChart .bar.negative:hover
+  fill: red;
+
+.BarChart g.infowin
+  fill: grey;
+
+.BarChart g.infowin text, .axis text
+  font: 10px;
+  fill: black;
+
+.BarChart .axis path,.BarChart .axis line
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+  stroke-dasharray: 0,0
+
+/*.BarChart path.domain
+	stroke:none;*/
+
+.bar-chart-ttip
+  position:absolute;
+  text-align: center;
+  //width: 100px;
+  height:auto;
+  background: transparent;
+  border-radius: 3px;
+  color: #222222;
+  padding: 3px 5px;
+  box-sizing border-box
+  z-index:9999;
+
+.BarChart-wrapper
+  position relative
+
+.bar-chart__value
+  padding: 2px

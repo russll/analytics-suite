@@ -1,0 +1,78 @@
+date-range
+  display inline-block
+  &__element
+    display: inline-block
+    width: 150px
+
+.revenues-expenses-bar-chart
+  width 100%
+  height 100%
+
+.axis path,
+.axis line
+  fill none
+  stroke #000
+  shape-rendering crispEdges
+  stroke-dasharray 2,2
+
+.state
+  text
+    fill #ffffff
+    font-size 10px
+
+.line
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+
+.tab-header.tab-header_sticked
+  position fixed
+  top 64px
+  background: #fff
+  z-index:9
+  box-shadow: 0px 1px 2px 0px rgba(0,0,2,0.15);
+  width auto
+  padding-left 30px
+  padding-right 30px
+  left 0
+  width 1000%
+.tab-header.tab-header_sticked th
+  background #fff
+
+.tree-grid__revenues-expenses th,
+.tree-grid__revenues-expenses tr:last-child
+  border none
+
+.tree-grid__revenues-expenses
+  & th:not(.num)
+    min-width 80px
+  & th.num
+    min-width 290px
+    max-width 290px
+  & .num
+    text-align: right
+  & .tab-header
+    text-align: right
+
+.rev-exp__reffy-div
+  margin-top: 30px
+  margin-bottom: 10px
+  font-size 14px
+  display: block
+  padding-left: 39px;
+  color #666
+
+h2
+  padding: 16px;
+  position: relative;
+  display: inline-block;
+
+@media screen and (max-width: 480px)
+  .BarChart-wrapper
+    min-width 380px
+    overflow scroll
+
+  h2
+    padding:0
+
+

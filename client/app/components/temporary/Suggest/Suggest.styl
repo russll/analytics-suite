@@ -1,0 +1,37 @@
+.suggest_box
+  position relative
+  display inline-block
+  .suggestList.hidden
+    display none;
+  .suggestList
+    position: absolute;
+    max-width: 400px;
+    z-index: 100;
+    background: #fff;
+    min-width: 258px;
+    top: 22px;
+    border-radius 2px
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.5);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 38px;
+		li:hover
+			background #e7e7e7;
+		li.selected
+			background #efefef;
+
+.suggestList li{
+			font-size: 12px;
+			white-space: nowrap;
+			padding: 0 10px;
+			text-overflow: ellipsis;
+			height: 38px;
+			display: block;
+			overflow: hidden;
+			box-sizing: content-box;
+			cursor: pointer;
+		}
+

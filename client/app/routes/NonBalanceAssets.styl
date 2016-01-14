@@ -1,0 +1,69 @@
+.card__header
+  padding 14px 10px 0 14px
+  font-size 16px
+  
+  &__small-text
+    color: #666
+    font-size 12px
+h2
+  font-weight 400
+
+.card
+  vertical-align: top
+  display: inline-block
+
+.card__text
+  min-height 180px
+
+.list
+  display inline-block
+  vertical-align: top
+  width: 49%
+
+.buffer30
+  height 20px
+
+.list_inmodal .list-item
+  display: block
+.non-bal-column
+  width: 48%;
+  display inline-block
+  text-align: center
+  vertical-align: top
+  padding-right 15px
+  
+  & h2
+    text-align: left
+    position: relative
+    padding-right:40px
+
+  & > div
+    text-align: left
+
+.non-bal-column_switch
+  position: absolute
+  right 0
+  top 0px
+.non-bal-column_switch
+  display: none
+
+@media (max-width:800px)
+  .non-bal-column_switch
+    display: inline-block
+    cursor: pointer
+    border 1px solid #ccc
+    border-radius 3px
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+
+  .non-bal-column
+    width: 97%
+  .non-bal-column-good
+    display none
+    & .non-bal-column_switch
+      transform rotate(180deg)
+
+  .is-good
+    & .non-bal-column-good
+      display block
+    & .non-bal-column-bad
+      display none

@@ -1,0 +1,23 @@
+{
+  "defaults": {
+    "protocol": "http",
+    "host": "52.33.191.248",
+    "_host": "192.168.11.168",
+    "port": "8000",
+    "format": "json",
+    "tokenProcess": "both",
+    "nodeProxy": true
+  },
+  "versions": {
+    "_baseVersion": "v0",
+    "rbs/auth": "v0",
+    "analytics/auth": "v0",
+    "analytics/bas-cashflow": "v0",
+    "analytics/bas-offbalancedassets": "v0",
+    "back-office/auth": "v0"
+  },
+  "contentTypes": {
+    "_baseFormat": "text/html",
+    "json": "application/json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "":"Главная",
+  "login": "Вход",
+  "borrowers": "Кредитный портфель",
+  "borrowers-report":"Детализация кредитного портфеля",
+  "borrowers-category-report": "Категории задолженности",
+  "borrowers-client-loan-portfolio-report":"Детализация кредитных договоров",
+  "borrowers-client-saldo-report":"Детализация денежных потоков",
+  "cashflow": "Движение денежных средств",
+  "tax": "Детализация налоговых выплат",
+  "statistics":"Статистика",
+  "cashflow-statistics": "Cтатистика движения денежных средств",
+  "non-balance-assets": "Забалансовые активы",
+  "revenues-expenses": "Доходы и расходы",
+  "money": "Ликвидные средства",
+  "fundsOnCorrespondedAccounts": "Средства на корсчетах в иных Банках",
+  "interbankList": "Межбанковское кредитование",
+  "securitiesList": "Ценные бумаги"
+}

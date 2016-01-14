@@ -25,3 +25,14 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+.idea
+.DS_Store
+
+# Rename along with its own renaming
+dist
+
+server.js
+
+data/schema.graphql
+data/schema.json

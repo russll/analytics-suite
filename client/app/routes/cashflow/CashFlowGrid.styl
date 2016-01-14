@@ -1,0 +1,122 @@
+.borrowers_table.filters
+  overflow: visible;
+
+::-webkit-scrollbar
+		-webkit-appearance: none;
+		width: 7px;
+		height: 7px
+
+::-webkit-scrollbar-thumb
+		border-radius: 4px;
+		background-color: rgba(0,0,0,.5);
+		-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+
+.cashFlowHeading
+	position relative;
+	th
+		font-weight normal;
+		font-size 13px
+		color #666
+		width 226px
+		text-align left
+		height 43px
+	tr
+		background-color #fff
+
+	th:nth-child(1)
+		width: 300px
+.table-cell__header
+	position relative;
+
+
+.cashflowtable td {
+	vertical-align: top;
+	background-color: rgba(150,150,150,0.1);
+}
+
+.filter_selectors
+	text-align justify;
+
+.filter_selectors:last-child
+	content "";
+	width 100%
+
+.filter_selectors>span
+	height 71px
+	text-align left
+	display inline-block
+	vertical-align top;
+	padding 0 10px 0 0
+
+.filter_selectors>span
+	button
+		vertical-align middle
+
+.filter_selectors>span>div
+	font-size 13px
+	text-align left;
+
+
+.cashflowtable
+  position relative;
+  tr:hover
+    background-color rgba(63,81,181,0.1)
+  tr.nohover:hover
+    background-color #fff
+
+  th
+    font-weight normal;
+    font-size 13px
+    color #666
+    text-align left
+    height 43px
+
+.cash_paginator {
+	text-align: right
+	height: 48px
+	line-height: 48px
+	font-size: 12px
+}
+.indi
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 0 2px;
+	float: left;
+	position: relative;
+	top: 17px;
+
+.block-row__column_mobile .indic
+	position absolute;
+	top: -15px;
+	left: 5px;
+
+
+.cash_paginator .material-icons {
+	position: relative;
+	top: 5px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.filterheadings
+  span
+    display inline-block;
+    font-size 13px
+    width 120px;
+    margin 0 10px
+
+  .filterheadings_longer
+    width 186px
+    margin: 0 23px 0 0
+
+  .filterheadings_long
+    width 176px
+    margin: 0 10px 0 30px
+
+
+@media screen and (max-width: 840px)
+	.filter_selectors>span
+		display block;
+		margin 0 auto 10px;
+		width 105px

@@ -1,0 +1,28 @@
+.treegrid { font-family: Roboto, sans-serif;font-size: 12px; font-weight: 400; width: 100%; overflow: auto; -webkit-appearance: none; padding-bottom:80px }
+.treegrid::-webkit-scrollbar {  -webkit-appearance: none; }
+.treegrid::-webkit-scrollbar:horizontal {  height: 10px; }
+.treegrid::-webkit-scrollbar-thumb { border-radius: 8px;border: 2px solid white;background-color: rgba(0, 0, 0, .5); }
+.treegrid table{  border-spacing:0; border-collapse: separate; }
+.treegrid tr{ height: 48px; line-height: 48px;}
+.treegrid .total{  }
+.treegrid th{ height: 100%; color: rgba(0,0,0,0.6); padding: 0 5px; min-width: 62px; border-bottom: 1px solid #e0e0e0; white-space: nowrap}
+.treegrid td{ white-space: nowrap; height: 100%; color: rgba(0,0,0,0.87); padding: 0 5px; min-width: 71px; border-bottom: 1px solid #e0e0e0;}
+.treegrid td[colspan="2"],.treegrid td[colspan="3"],.treegrid td[colspan="4"]  { text-align: center; }
+.treegrid .num{ text-align: center; min-width: 80px;max-width: 90px; }
+.treegrid .txt{ text-align: left; overflow: hidden;white-space: nowrap; text-overflow: ellipsis;}
+.treegrid .title{ white-space: nowrap;}
+.treegrid .girdTotals div{  display: inline-block; }
+.treegrid .zone{ background-color: #eaeaea; } /* rgba(0, 255, 255, 0.14902); */
+.treegrid tr:hover{ background: #eee;}
+.treegrid tr.heading:hover{ background: #FFF; }
+.treegrid .selected{ background: #F5F5F5; }
+.treegrid .center{ text-align: center;}
+.treegrid td.title { text-overflow: ellipsis; min-width:260px; width: 260px; max-width: 260px; padding-left: 38px; position: relative; overflow: hidden; text-align: left}
+.treegrid td i { cursor:pointer; color: rgba(0,0,0,0.87);  vertical-align: middle;position: absolute;left: 6px;top: 50%;margin-top: -13px;height: 20px; }
+.treegrid span i {cursor:pointer; color: #3f51b5;  vertical-align: middle;position: relative;left: -4px;top: 4px; height: 20px; }
+.treegrid .girdCols  span:nth-child(1),.girdTotals span:nth-child(1){ min-width: 250px; }
+.treegrid .md-icon {  font-family: 'Material Icons';text-rendering: optimizeLegibility;font-feature-settings: "liga" 1;font-style: normal;text-transform: none;line-height: 1;font-size: 24px;width: 24px;height: 24px;display: inline-block;overflow: hidden;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; }
+.treegrid .data .title{ padding-left: 52px; max-width: 220px; width: 220px;}
+.treegrid .heading.bold {font-weight: bold}
+.treegrid .heading.money-table__header.tab-header_sticked{ position:fixed; top:64px; z-index:1; background: #fff;}
+.treegrid .money-table__header.first>td{ height:96px; vertical-align: bottom; }
